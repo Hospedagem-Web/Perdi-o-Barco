@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/midia/fundo.jpeg');
+    /* Caminho da imagem de fundo */
+    background-size: cover;
+    /* Faz a imagem preencher toda a tela */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Evita repetição da imagem */
+    background-attachment: fixed;
+    /* Mantém o fundo fixo ao rolar a página */
+    color: #020202;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.623);
+    /* Fundo translúcido para destacar o conteúdo */
+    border-radius: 10px;
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    max-width: 300px;
+    height: auto;
+}
+
+/* Texto de apresentação */
+.apresentacao {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 25px;
+}
+
+.apresentacao h1 {
+    text-align: center;
+    color: #0482f8;
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: #fdfafaab;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0, 45, 248);
+}
+
+.card h2 {
+    color: #0482f8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 25px 35px;
+    background-color: #0482f8;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #283e9e;
+}
+
+/* Vídeo e Carrossel */
+.video-container,
+.carrossel-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+}
+
+/* Carrossel */
+.carrossel {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 204, 0, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #ffaa00;
+}
