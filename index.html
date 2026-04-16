@@ -3,63 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Perdi o Barco</title>
+    <title>Carrossel de Fotos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-
-        <!-- Logo -->
         <header class="logo">
             <img src="./midia/logo.png" alt="Logo">
         </header>
 
-        <!-- Texto de apresentação -->
         <section class="apresentacao">
-            <h1>Perdi o Barco</h1>
-            <p>
-                Falar sobre transporte é falar sobre acesso, rotina e dignidade. Mas essa realidade não é vivida da
-                mesma forma por todos. Na Ilha de Cotijuba, por exemplo, o deslocamento depende quase exclusivamente do
-                transporte fluvial.
-            </p>
-            <p>
-                Quem mora na ilha precisa organizar a vida em torno de poucos horários, que muitas vezes não atendem às
-                necessidades reais da população. Trabalho, estudo, saúde — tudo fica condicionado a um sistema que não
-                oferece alternativas suficientes.
-            </p>
-            <p>
-                É nesse contexto que surge o vídeo: acompanhamos uma menina que perde o “geladão” e, com isso, não
-                consegue voltar para casa. A cena é simples, mas revela um problema muito maior. Não se trata apenas de
-                perder um horário, mas de não ter outra opção.
-            </p>
-            <p>
-                O geladão, que deveria funcionar como transporte público acessível e eficiente, opera com poucos
-                horários e sem integração com a dinâmica da cidade. Se cumpre o papel de um ônibus, por que não funciona
-                com a mesma frequência e lógica? E por que, nos fins de semana, a passagem ainda é mais cara?
-            </p>
-            <p>
-                O que aparece no vídeo é reflexo de uma realidade contínua. O direito de ir e vir existe, mas não chega
-                de forma igual para quem vive na ilha. É sobre isso que precisamos falar.
-            </p>
+            <h1>Galeria de Fotos</h1>
         </section>
 
-        <!-- Cards -->
-        <section class="cards">
-            <div class="card">
-                <h2>Vídeo</h2>
-                <p>Assista ao vídeo de apresentação.</p>
-                <a href="./midia/Video_Perdi-O-Barco.mp4" class="btn">Ver Vídeo</a>
-            </div>
-
-            <div class="card">
-                <h2>Carrossel de Fotos</h2>
-                <p>Veja nossa galeria de imagens.</p>
-                <a href="./carrossel.html" class="btn">Ver Fotos</a>
+        <!-- Carrossel -->
+        <section class="carrossel-container">
+            <div class="carrossel">
+                <button class="prev">&#10094;</button>
+                <div class="slides">
+                    <img src="./midia/foto1.jpg" alt="Foto 1">
+                    <img src="./midia/foto2.jpeg" alt="Foto 2">
+                    <img src="./midia/foto3.jpeg" alt="Foto 3">
+                    <img src="./midia/foto4.jpeg" alt="Foto 4">
+                </div>
+                <button class="next">&#10095;</button>
             </div>
         </section>
-
     </div>
+
+    <!-- Script no final do body -->
+    <script src="script.js"></script>
 </body>
 
 </html>
